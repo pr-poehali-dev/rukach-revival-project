@@ -50,11 +50,16 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-white border-b border-border">
+      <header className="bg-card border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="text-2xl font-bold text-primary">РУКАЧ</div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="https://cdn.poehali.dev/files/43079eac-4ea6-40e5-9e4d-697766e2df02.jpeg" 
+                alt="РУКАЧ Логотип"
+                className="h-12 w-12 object-contain"
+              />
+              <div className="text-2xl font-bold text-foreground">РУКАЧ</div>
               <Badge variant="outline" className="text-xs">Русское качество</Badge>
             </div>
             <div className="hidden md:flex items-center space-x-6">
@@ -211,7 +216,7 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="bg-white rounded-lg p-8">
+          <div className="bg-card rounded-lg p-8">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -264,7 +269,7 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-foreground text-background">
+      <section id="contact" className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-8">
